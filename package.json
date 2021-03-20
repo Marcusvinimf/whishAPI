@@ -1,8 +1,12 @@
 {
-  "name": "backVtex",
+  "name": "backvtex",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.ts",
+  "author": "Marcus Vinicius marcusvinimf@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
