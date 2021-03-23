@@ -14,7 +14,7 @@ module.exports = (app) => {
       if (buscaUsuarios.length) {
         resp.status(200).json(buscaUsuarios)
       } else {
-        resp.status(404).json({ Mensagem: "Nenhum Produto salvo por enquanto" })
+        resp.status(404).json({ Mensagem: "Nenhum Produto salvo por enquanto." })
       }
     } catch {
       resp.status(500).json({ error: err })
