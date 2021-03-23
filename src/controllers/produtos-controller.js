@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 module.exports = (app) => {
 
   app.get('/', (req, resp)=>{
-    resp.send("Banco de dados da Whish LIst Vtex: <a href='http://localhost:8080/produtos'>CLICK AQUI</>")
+    resp.send("Banco de dados da Whish LIst Vtex: <a href='https://whish-list-back-end.herokuapp.com/produtos'>CLICK AQUI</>")
   })
 
   app.get('/produtos', async (req, resp) => {

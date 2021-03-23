@@ -18,5 +18,5 @@ const produtosController = require('./controllers/produtos-controller');
 produtosController(app)
 
 app.listen(port, () => {
-  console.log(`Tudo sendo ouvido corretamente`)
+  console.log(`Tudo sendo ouvido corretamente `)
 })
