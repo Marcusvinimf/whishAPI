@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require("mongoose");
-const port = process.env.PORT || 8080;
+const port = process.env.PORT;
 const app = express();
 const uri = "mongodb+srv://dbBlackBeauty:blackbeauty@vtexblackbeauty.8pjfq.mongodb.net/dbBlackBeauty?retryWrites=true&w=majority";
 
