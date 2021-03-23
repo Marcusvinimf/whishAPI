@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 
 module.exports = (app) => {
 
+  app.get('/', (req, resp)=>{
+    resp.send("Banco de dados da Whish LIst Vtex: <a href='http://localhost:8080/produtos'>CLICK AQUI</>")
+  })
+
   app.get('/produtos', async (req, resp) => {
 
     try {
@@ -10,7 +14,7 @@ module.exports = (app) => {
       if (buscaUsuarios.length) {
         resp.status(200).json(buscaUsuarios)
       } else {
-        resp.status(404).json({ Mensagem: "Nenhum usuário cadastrado" })
+        resp.status(404).json({ Mensagem: "Nenhum Produto salvo por enquanto." })
       }
     } catch {
       resp.status(500).json({ error: err })
