@@ -4,6 +4,6 @@ informações:
 
 iniciar o projeto com yarn seguindo de yarn start
 
-## whishAPI
+## Deploy
 
 https://whish-list-back-end.herokuapp.com/
